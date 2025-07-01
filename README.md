@@ -34,17 +34,13 @@ binance_price_capture/
 
 ### 1. Clone the Repo
 
-```bash
-git clone https://github.com/your-username/binance_price_capture.git
-cd binance_price_capture
-
-2. Create the PostgreSQL Table
+### 2. Create the PostgreSQL Table
 Run:
 
 psql -U postgres -d crypto -p 5433 -f schema.sql
 This creates the prices table.
 
-3. Update DB Credentials
+### 3. Update DB Credentials
 In both db.py and queries.py, update:
 
 conn = psycopg2.connect(

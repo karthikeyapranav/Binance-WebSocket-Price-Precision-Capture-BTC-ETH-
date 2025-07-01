@@ -1,0 +1,3 @@
+websockets
+asyncio
+psycopg2-binary

@@ -1,4 +1,4 @@
-# 📈 Binance WebSocket Price Precision Capture: BTC & ETH
+#  Binance WebSocket Price Precision Capture: BTC & ETH
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14%2B-316192.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
@@ -11,7 +11,7 @@ It's an essential foundation for anyone looking to build real-time crypto analyt
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 The core idea is to create a reliable and accurate pipeline for live market data. By consuming data directly from Binance's low-latency WebSocket, we ensure that every price tick is captured. Storing this data in PostgreSQL allows for efficient querying and analysis, enabling both real-time monitoring and historical backtesting.
 
@@ -26,7 +26,7 @@ The core idea is to create a reliable and accurate pipeline for live market data
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 This project is built using a straightforward yet powerful combination of technologies:
 
@@ -37,7 +37,7 @@ This project is built using a straightforward yet powerful combination of techno
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 The project is organized into logical components for clarity and maintainability:
 binance_price_capture/
@@ -50,7 +50,7 @@ binance_price_capture/
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙ Setup Instructions
 
 Follow these steps to get the Binance price capture system up and running on your local machine.
 
@@ -115,11 +115,11 @@ Follow these steps to get the Binance price capture system up and running on you
 
 ---
 
-## 🚀 Running the Scripts
+##  Running the Scripts
 
 Once the setup is complete, you can start capturing and querying live price data.
 
-### 🔹 1. Start WebSocket Data Capture (Producer)
+###  1. Start WebSocket Data Capture (Producer)
 
 Run `main.py` to begin streaming live price updates from Binance and inserting them into your PostgreSQL database. This script will run continuously, collecting data.
 
@@ -127,7 +127,7 @@ You will see console output indicating that the WebSocket connection is establis
 
 Keep this script running in one terminal window to continue capturing data.
 
-🔹 2. Query Data from Database (Consumer/Analytics)
+ 2. Query Data from Database (Consumer/Analytics)
 Open a new terminal window and run queries.py. This script demonstrates how to fetch various real-time analytics from your captured data.
 
 python queries.py
@@ -141,7 +141,7 @@ The high and low prices recorded within the last 1 minute.
 
 You can modify queries.py to test different timeframes or symbols.
 
-📊 Viewing Data in pgAdmin (Optional)
+ Viewing Data in pgAdmin (Optional)
 For a visual inspection of your captured data and to run custom SQL queries, use pgAdmin:
 
 Open pgAdmin: Launch the pgAdmin application.
@@ -160,7 +160,7 @@ SQL
 
 SELECT * FROM prices WHERE symbol = 'BTCUSDT' ORDER BY timestamp DESC LIMIT 10;
 SELECT MIN(price), MAX(price) FROM prices WHERE symbol = 'ETHUSDT' AND timestamp >= NOW() - INTERVAL '5 minutes';
-🧠 Potential Use Cases
+ Potential Use Cases
 This project serves as a foundational component for various applications in the cryptocurrency domain:
 
 Real-time Price Monitoring: Build dashboards to visualize live price movements.
@@ -173,7 +173,7 @@ Historical Data Analysis: Conduct in-depth research on past market behavior.
 
 Alerting Systems: Implement notifications when prices cross certain thresholds or exhibit unusual patterns.
 
-✅ Next Steps & Enhancements
+ Next Steps & Enhancements
 This project can be extended in many exciting ways:
 
 Support for More Trading Pairs: Easily extend main.py to subscribe to additional cryptocurrency symbols (e.g., XRPUSDT, ADAUSDT).
@@ -188,17 +188,17 @@ Error Handling & Reconnection Logic: Enhance the WebSocket client with robust er
 
 Containerization (Docker Compose): Package the PostgreSQL database and Python scripts into Docker containers orchestrated by Docker Compose for even easier setup and deployment.
 
-🤝 Contributing
+ Contributing
 Contributions, issues, and feature requests are highly welcome! If you have ideas for improvements, new features, or encounter any bugs, please feel free to:
 
 Open an issue: Describe the bug or feature request in detail.
 
 Submit a Pull Request: If you've implemented a solution or a new feature, we'd love to review it!
 
-📄 License
+ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
+ Acknowledgments
 The Binance team for providing comprehensive and reliable WebSocket APIs.
 
 The PostgreSQL community for a robust and versatile database system.

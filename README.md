@@ -50,7 +50,7 @@ binance_price_capture/
 
 ---
 
-## ⚙ Setup Instructions
+##  Setup Instructions
 
 Follow these steps to get the Binance price capture system up and running on your local machine.
 

@@ -1,12 +1,12 @@
-# 🚀 Project Summary: Binance Live Price Capture & Analytics
+#  Project Summary: Binance Live Price Capture & Analytics
 
-## ✅ Core Goal
+##  Core Goal
 
 The central aim of this project is to build a robust and precise pipeline for **continuously capturing real-time cryptocurrency prices** (specifically BTCUSDT and ETHUSDT) directly from the Binance WebSocket API and reliably storing them in a **PostgreSQL database** for immediate and historical analytics.
 
 ---
 
-## ⚙️ Main Components & Their Functionality
+##  Main Components & Their Functionality
 
 This project is structured around several key components, each playing a vital role in the data flow:
 
@@ -38,7 +38,7 @@ This project is structured around several key components, each playing a vital r
 
 ---
 
-## 🔍 Example Query Outputs
+##  Example Query Outputs
 
 When you run the `queries.py` script, you'll see output similar to this (values will vary based on live market data and execution time):
 
@@ -54,7 +54,7 @@ High/Low for ETHUSDT in last 1 minute: High=3505.00, Low=3490.00
 
 ---
 
-## 📊 Visualizing Data with pgAdmin
+##  Visualizing Data with pgAdmin
 
 For a more intuitive way to explore the captured data, `pgAdmin` is an excellent tool:
 
@@ -65,7 +65,7 @@ For a more intuitive way to explore the captured data, `pgAdmin` is an excellent
 
 ---
 
-## ✅ Project Outcome
+##  Project Outcome
 
 This project successfully establishes a **fully functional and precise pipeline** that:
 
@@ -75,7 +75,7 @@ This project successfully establishes a **fully functional and precise pipeline*
 
 ---
 
-## 🚀 Future Enhancements & Next Steps
+##  Future Enhancements & Next Steps
 
 This project is a solid starting point and can be significantly expanded:
 
